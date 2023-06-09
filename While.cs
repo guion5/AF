@@ -1,20 +1,17 @@
 using System;
-using System.Globalization;
 
-namespace Course
+public class Program
 {
-    public class While
+    public static void Main()
     {
-        public static void main(string[] args)
+        int num, i = 1;
+        Console.Write("Digite um numero inteiro positivo: ");
+        num = int.Parse(Console.ReadLine());
+        
+        while (i <= num)
         {
-            double num, i = 1;
-            Console.WriteLine("Digite um número inteiro positivo: ");
-            num = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            while (i <= num)
-            {
-                Console.WriteLine(i.ToString(CultureInfo.InvariantCulture) + ", ");
-                i++;
-            }
+            Console.Write(i + " ");
+            i++;
         }
     }
 }
